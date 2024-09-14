@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import messagebox
-#made by self
 class BudgetApp(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -103,7 +102,6 @@ class Budget:
 
     def calculate_remaining_budget(self):
         return self.income - self.calculate_total_expenses()
-#made with help from ChatGPT
     def get_summary(self):
         summary = "Budget Summary:\n"
         summary += f"Income: ${self.income}\n"
@@ -114,8 +112,6 @@ class Budget:
         summary += f"Remaining Budget: ${self.calculate_remaining_budget()}"
         return summary
         
-
-#made by self
 if __name__ == "__main__":
     app = BudgetApp()
     app.mainloop()
